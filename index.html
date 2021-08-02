@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -13,9 +17,25 @@
     </header>
     <main class="main">
       <div class="gridWrapper" id="grid"></div>
-      <button id="erase" class="erase">Erase</button>
+      <div class="settings">
+        <div class="buttons">
+          <button id="normalBtn" class="button">Normal Mode</button>
+          <button id="colourBtn" class="button">Colour Mode</button>
+          <button id="eraserBtn" class="button">Eraser</button>
+          <button id="clearBtn" class="button">Clear Board</button>
+        </div>
+        <div class="slider">
+          <div id="sliderValue" class="sliderValue">16 x 16</div>
+          <input type="range" id="slider" value="16" min="1" max="64" />
+        </div>
+      </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>Copyright © 2021 Reece Walsh</p>
+      <a href="https://github.com/reeceawalsh" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>

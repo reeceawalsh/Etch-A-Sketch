@@ -170,3 +170,77 @@ footer {
 footer p {
   margin-right: 3px;
 }
+
+/* For phones */
+@media (min-width: 375px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header {
+    height: 0px;
+    margin: 0px;
+  }
+
+  .gridWrapper {
+    height: 350px;
+    width: 350px;
+  }
+  .settings {
+    margin-top: 10px;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .button {
+    flex: 1 1 90px;
+    font-size: 0.8rem;
+    width: auto;
+    padding: 3px;
+    margin: 5px;
+  }
+
+  button:hover,
+  #normalBtn:focus,
+  #colourBtn:focus,
+  #eraserBtn:focus {
+    letter-spacing: 0px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.2s ease 0s;
+  }
+
+  #normalBtn:focus,
+  #colourBtn:focus,
+  #eraserBtn:focus {
+    border: var(--secondary-dark) 1px solid !important;
+    text-shadow: 0.1px 0.1px var(--primary-dark);
+  }
+
+  .clearBtn {
+    margin: 0;
+    width: 50px;
+  }
+
+  #sliderValue {
+    font-size: 0.9rem;
+  }
+
+  #slider {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+  }
+  .header {
+    padding-top: 30px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}

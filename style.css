@@ -92,6 +92,18 @@ body {
   margin-right: 0px;
 }
 
+@keyframes opaqueButtonBackground {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+    color: black;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 button:hover,
 #normalBtn:focus,
 #colourBtn:focus,
@@ -172,7 +184,7 @@ footer p {
 }
 
 /* For phones */
-@media (min-width: 360px) {
+@media (max-width: 380px) {
   .header h1 {
     font-size: 2rem;
   }
